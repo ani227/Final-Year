@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Registration</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="pro_reg">
+		<div class="form_box mt-5 mb-5">
+			<h4 class="text-center font-weight-bold text-uppercase py-2">Project Registration Form</h4>
+			<div class="container">
+				<div class="card login_details mt-5">
+					<h5 class="card-header text-center font-weight-bold text-uppercase py-4">Login Details</h5>
+					<div class="mt-3 card-body">
+						<form>
+							<div class="form-group form-inline">
+								<label for="signup_email">Email address</label>
+								<input type="email" class="form-control ml-3 w-50" id="signup_email" aria-describedby="emailHelp" placeholder="youremail@gmail.com">
+								<button type="submit" class="btn loginbx ml-5">Verify</button>
+							</div>
+							<div class="form-inline">
+								<div class="form-group form-inline">
+									<label for="user_name">Username</label>
+									<input type="text" class="form-control ml-3" id="user_name" placeholder="Username">
+								</div>
+								<div class="form-group form-inline ml-5">
+									<label for="signup_password">Password</label>
+									<input type="password" class="form-control ml-3" id="signup_password" placeholder="Password">
+								</div>
+							</div>
+							<!-- <fieldset class="form-group mt-5">
+								<div class="form-check">
+									<input type="radio" class="form-check-input" id="if_faculty" onclick="myFunctionF()">
+									<label class="form-check-label" for="if_faculty">Check me out if you are <b>Faculty</b></label>
+								</div>
+								<div class="form-check">
+									<input type="radio" class="form-check-input" id="if_leader" onclick="myFunctionL()">
+									<label class="form-check-label" for="exampleCheck1">Check me out if you are <b>Team Leader</b></label>
+								</div>
+							</fieldset> -->
+
+							<fieldset class="form-group mt-5">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="gridRadios" id="if_faculty" value="option1" checked onclick="myFunctionF()">
+									  <label class="form-check-label" for="if_faculty">Check me out if you are <b>Faculty</b></label>
+									</div>
+									<div class="form-check mt-2">
+									  <input class="form-check-input" type="radio" name="gridRadios" id="if_leader" value="option2" onclick="myFunctionL()">
+									  <label class="form-check-label" for="exampleCheck1">Check me out if you are <b>Team Leader</b></label>
+									</div>
+							  </fieldset>
+							
+						</form>
+					</div>
+					</div>
+				<div id="confirm_faculty" class="card for_faculty mt-5">
+					<h5 class="card-header text-center font-weight-bold text-uppercase py-4">Faculty Personal Details</h5>
+					<form class="mt-3 card-body">
+						<div class="form-row">
+						  <div class="form-group col-md-4">
+							<label for="name">Your Name</label>
+							<input type="text" class="form-control" placeholder="Full Name">
+						  </div>
+						  <div class="col-md-1"></div>
+						  <div class="form-group col-md-3">
+							<label for="number">Contact Number</label>
+							<input type="number" class="form-control" placeholder="0123456789">
+						  </div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="signup_email">Email address</label>
+								<input type="email" class="form-control" id="signup_email" aria-describedby="emailHelp" placeholder="youremail@gmail.com">
+							</div>
+							<div class="col-md-1"></div>
+							<div class="form-group col-md-7">
+								<label for="name">Technologies in which you can help</label>
+								<input type="text" class="form-control" placeholder="Enter all Technalogies. example: html,css,java,etc.">
+							  </div>
+						</div>
+						<button type="submit" class="btn loginbx">Submit</button>
+					  </form>
+				</div>
+				<div id="confirm_leader" class="for_student" style="display:none">
+					<div class="card mt-5">
+						<h5 class="card-header text-center font-weight-bold text-uppercase py-4">Team Leader</h5>
+						<div class="card-body">
+							<div id="" class="table-editable">
+								<!-- <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+									class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span> -->
+								<table class="table table-bordered table-responsive-md table-striped text-center">
+								<thead>
+									<tr>
+										<th class="text-center w15em">Leader Name</th>
+										<th class="text-center w20em">Email</th>
+										<th class="text-center w10em">Roll Number</th>
+										<th class="text-center w15em">Role in Project</th>
+										<!-- <th class="text-center">Remove</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Anish Kumar Verma"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="example@email.com"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="1613313015"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Frontend"></td>
+									</tr>						
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<!-- Member Editable table -->
+					<div class="card mt-5">
+						<h5 class="card-header text-center font-weight-bold text-uppercase py-4">Team Members</h5>
+						<div class="card-body">
+							<div id="table" class="table-editable">
+								<span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+									class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+								<table id="team" class="table table-bordered table-responsive-md table-striped text-center">
+								<thead>
+									<tr>
+									<th class="text-center w15em">Member Name</th>
+									<th class="text-center w20em">Email</th>
+									<th class="text-center w10em">Roll Number</th>
+									<th class="text-center w15em">Role in Project</th>
+									<th class="text-center">Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Anish Kumar Verma"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="example@email.com"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="1613313015"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Frontend"></td>
+									<td>
+										<span class="table-remove"><button type="button"
+											class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+									</td>
+									</tr>
+									<!-- This is our clonable table line -->
+									<tr>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_name"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="edit_email"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="edit_rollnumber"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_role"></td>
+										<td>
+											<span class="table-remove"><button type="button"
+												class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr>
+
+									<!--This is our clonable table line end -->
+							
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- Editable table -->
+					<div class="card Supervisor_details mt-5">
+						<h5 class="card-header text-center font-weight-bold text-uppercase py-4">Supervisor</h5>
+						<div class="card-body">
+							<div class="table-editable">
+								<!-- <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+									class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span> -->
+								<table class="table table-bordered table-responsive-md table-striped text-center">
+								<thead>
+									<tr>
+									<th class="text-center w15em">Supervisor Name</th>
+									<th class="text-center w20em">Email</th>
+									<th class="text-center w10em">Employee I'd</th>
+									<th class="text-center w15em">Designation</th>
+									<!-- <th class="text-center">Remove</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Anish Kumar Verma"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="example@email.com"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="ITE107226"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="Asstt. Prof."></td>
+									<!-- <td>
+										<span class="table-remove"><button type="button"
+											class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+									</td> -->
+									</tr>
+									<!-- This is our clonable table line -->
+									<!-- <tr>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_name"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="edit_email"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="edit_rollnumber"></td>
+										<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_role"></td>
+										<td>
+											<span class="table-remove"><button type="button"
+												class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr> -->
+
+									<!--This is our clonable table line end -->
+							
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer_sitemap full_width fullwidth pt-2">
+			<div class="footer_logo">
+				<img src="../img/logo.png" alt="logo" />
+			</div>
+			<div class="footer_center">
+				<h5>Important Links</h5>
+				<div>
+				<center>
+					<a href="home.html">Home</a>
+					<a href="">About</a>
+					<a href="register.html">Register</a>
+					<a href="" data-toggle="modal" data-target="#contactmodal">Contact Us</a>
+				</center>
+				</div>
+			</div>
+			<div class="ver_line"></div>
+			<div class="social_icons zero_margin">
+				<h6>Social</h6>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-linkedin"></i>
+				<i class="fab fa-twitter-square"></i>
+			</div>
+			<!-- <div class="ver_line">
+		
+				</div> -->
+			<div class="footer_right pr-3">
+				<aside>
+				<figure>
+					<i class="fas fa-map-marked-alt fa-4x"></i>
+				</figure>
+				<div>
+					<h4>Location</h4>
+					<p>Plot-19, Institutional Area, Knowledge Park II, Greater Noida, Uttar Pradesh 201306</p>
+				</div>
+				</aside>
+				<aside>
+				<figure>
+					<i class="fas fa-envelope-open fa-4x"></i>
+				</figure>
+				<div>
+					<h4>Email ID</h4>
+					<p><a href="mailto:meraprof@gmail.com">xyz@gmail.com</a></p>
+				</div>
+				</aside>
+				<aside>
+				<figure>
+					<i class="fas fa-mobile-alt fa-4x"></i>
+				</figure>
+				<div>
+					<h4>Contact Number</h4>
+					<p>+91 1234567890</p>
+				</div>
+				</aside>
+			</div>
+		</footer>
+	</div>
+	
+
+	<script>
+		function myFunctionF() {
+			var radio = document.getElementById("if_faculty");
+			var text = document.getElementById("confirm_faculty");
+			if (radio.checked == true){
+			text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+		}
+	</script>
+
+	<script>
+		function myFunctionL() {
+			var radio = document.getElementById("if_leader");
+			var text = document.getElementById("confirm_leader");
+			if (radio.checked == true){
+			text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+		}
+	</script>
+
+
+	<script>
+		const $tableID = $('#table');
+		const $BTN = $('#export-btn');
+		const $EXPORT = $('#export');
+
+		const newTr = `
+		<tr class="hide">
+			<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_name"></td>
+			<td class="pt-3-half" contenteditable="true"><input type="email" class="form-control" id="" placeholder="edit_email"></td>
+			<td class="pt-3-half" contenteditable="true"><input type="number" class="form-control" id="" placeholder="edit_rollnumber"></td>
+			<td class="pt-3-half" contenteditable="true"><input type="text" class="form-control" placeholder="edit_role"></td>
+			<td>
+				<span class="table-remove"><button type="button"
+					class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+			</td>
+		</tr>`;
+
+		$('.table-add').on('click', 'i', () => {
+
+		const $clone = $tableID.find('tbody tr').last().clone(true).removeClass('hide table-line');
+
+		if ($tableID.find('tbody tr').length === 0) {
+
+			$('#team > tbody').append(newTr);
+		}
+
+		$tableID.find('table').append($clone);
+		});
+
+		$tableID.on('click', '.table-remove', function () {
+
+		$(this).parents('tr').detach();
+		});
+
+		$tableID.on('click', '.table-up', function () {
+
+		const $row = $(this).parents('tr');
+
+		if ($row.index() === 1) {
+			return;
+		}
+
+		$row.prev().before($row.get(0));
+		});
+
+		$tableID.on('click', '.table-down', function () {
+
+		const $row = $(this).parents('tr');
+		$row.next().after($row.get(0));
+		});
+
+		// A few jQuery helpers for exporting only
+		jQuery.fn.pop = [].pop;
+		jQuery.fn.shift = [].shift;
+
+		$BTN.on('click', () => {
+
+		const $rows = $tableID.find('tr:not(:hidden)');
+		const headers = [];
+		const data = [];
+
+		// Get the headers (add special header logic here)
+		$($rows.shift()).find('th:not(:empty)').each(function () {
+
+			headers.push($(this).text().toLowerCase());
+		});
+
+		// Turn all existing rows into a loopable array
+		$rows.each(function () {
+			const $td = $(this).find('td');
+			const h = {};
+
+			// Use the headers from earlier to name our hash keys
+			headers.forEach((header, i) => {
+
+			h[header] = $td.eq(i).text();
+			});
+
+			data.push(h);
+		});
+
+		// Output the result
+		$EXPORT.text(JSON.stringify(data));
+		});
+	</script>
+		
+</body>
+</html>

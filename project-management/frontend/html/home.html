@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Registration</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper homepage">
+        <nav>
+            <figure>
+                <a href="home.html"><img src="../img/logo.png" alt="logo"></a>
+            </figure>
+            <h2 class="text-center">Noida Institute of Engineering and Technology (NIET)</h2>
+            <div class="signin">
+                <button class="btn loginbx" id="register" onclick="window.location.href = 'register.html';">Register</button>
+            </div>
+        </nav>
+        <main>
+            <header>
+                <h1>Online Project Registration</h1>
+            </header>
+
+            <article>
+                <div class="time_card bg-white home_cards p-3">
+                    <h2>Registration Time</h2>
+                    <h2 id="timecount"></h2>
+                </div>
+                <div class="signin_box">
+                    <div class="bg-white home_cards" data-toggle="modal" data-target="#signinmodal">
+                        <h2>Sign in</h2>
+                        <h2>as</h2>
+                        <h2>Student</h2>
+
+                    </div>
+                    <div class="bg-white home_cards" data-toggle="modal" data-target="#signinmodal">
+                        <h2>Sign in</h2>
+                        <h2>as</h2>
+                        <h2>Faculty</h2>
+                    </div>
+                    <div class="bg-white home_cards" data-toggle="modal" data-target="#signinmodal">
+                        <h2>Sign in</h2>
+                        <h2>as</h2>
+                        <h2>Admin</h2>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="footer_sitemap full_width fullwidth pt-2">
+                <div class="footer_logo">
+                    <img src="../img/logo.png" alt="logo" />
+                </div>
+                <div class="footer_center">
+                    <h5>Important Links</h5>
+                    <center>
+                        <a href="home.html">Home</a>
+                        <a href="">About</a>
+                        <a href="register.html">Register</a>
+                        <a href="" data-toggle="modal" data-target="#contactmodal">Contact Us</a>
+                    </center>
+                </div>
+                <div class="ver_line"></div>
+                <div class="social_icons zero_margin">
+                    <h6>Social</h6>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+                <!-- <div class="ver_line">
+            
+                    </div> -->
+                <div class="footer_right pr-3">
+                    <aside>
+                        <figure>
+                            <i class="fas fa-map-marked-alt fa-4x"></i>
+                        </figure>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Plot-19, Institutional Area, Knowledge Park II, Greater Noida, Uttar Pradesh 201306</p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <figure>
+                            <i class="fas fa-envelope-open fa-4x"></i>
+                        </figure>
+                        <div>
+                            <h4>Email ID</h4>
+                            <p><a href="mailto:meraprof@gmail.com">xyz@gmail.com</a></p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <figure>
+                            <i class="fas fa-mobile-alt fa-4x"></i>
+                        </figure>
+                        <div>
+                            <h4>Contact Number</h4>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </aside>
+                </div>
+            </footer>
+        </main>
+
+
+        <!--------------- signin modal------------->
+
+        <div class="modal fade" id="signinmodal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header pr-4 pl-4">
+                        <h4 class="modal-title">Sign in</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="p-4">
+                        <div class="mb-2">
+                            <p>Please Signin to continue and explore more.</p>
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="form-group">
+                                    <label for="uname">Username:</label>
+                                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <a href="">Forgot Password</a>
+                                </div>
+
+                                <button type="submit" class="btn loginbx">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------end if signin modal---------------->
+
+        <!------------Contact us modal---------->
+        <div class="modal fade" id="contactmodal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header pr-4 pl-4">
+                        <h4 class="modal-title">Contact Us</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="p-4">
+                        <div class="mb-2">
+                            <p>Please feel free to contact us if you have any queries.</p>
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="form-group">
+                                    <label for="yourname">Your Name:</label>
+                                    <input type="text" class="form-control" id="yourname" placeholder="Enter username" name="yourname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="querymsg">Message</label>
+                                    <textarea class="form-control" id="querymsg" rows="3"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn loginbx">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--end of modal body-->
+                </div>
+            </div>
+        </div>
+        <!---------end of Contact us modal---------->
+    </div>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("june 28, 2020 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="timecount"
+            document.getElementById("timecount").innerHTML = days + "d " + hours + "h " + +minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timecount").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+body {
+    font-style: normal;
+    outline: none;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-family: "sans-serif" !important;
+    padding: 0;
+    margin: 0;
+    color: #626262 !important;
+    background-image: linear-gradient(to bottom,#ffffff 0%,#dde8ff 90%);
+    min-height: 100vh;
+  }
+  
+  * {
+    font-style: normal;
+    outline: none !important;
+    text-align: left;
+    letter-spacing: normal;
+    font-stretch: normal;
+    padding: 0;
+    margin: 0;
+    word-break: normal;
+  }
+  
+  input,
+  textarea {
+    outline: none;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+    color: inherit;
+  }
+
+  .wrapper {
+      display: grid;
+      grid-template-rows: 83px auto;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* background-color: #fff; */
+    z-index: 1;
+    padding: 0 2em;
+    border-bottom: 1px solid #dedede;
+    overflow: hidden;
+    height: 83px;
+    min-height: 3vh;
+    align-items: center;
+    grid-column-gap: 1em;
+  }
+
+  nav img {
+    height: 4.5em;
+  }
+
+  .loginbx {
+    /* position: relative; */
+    border-radius: 8px!important;
+    padding: 0 2em;
+    color: #fff;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(90deg,#fadb62 0%,#FFA862 100%);
+  }
+
+  nav > h2 {
+    font-size: 2em;
+  }
+
+  /*------------------SignIn form-----------------*/
+
+  .modal-content {
+    width: max-content;
+    box-shadow: 5px 10px 50px #fff;
+    border-radius: 8px;
+    margin-top: 15%;
+  }
+
+/*-----------------------sitemap---------------*/
+.footer_sitemap {
+  display: grid;
+  background-image: linear-gradient(90deg,#fadb62 0%,#FFA862 100%);
+  grid-template-columns: .7fr 1fr 2px .3fr 2fr;
+  grid-column-gap: 2em;
+  justify-items: center;
+}
+
+.about-wrapper .footer_sitemap {
+  margin-top: 2em;
+  border-top: solid 1px #f1f1f1;
+}
+
+.footer_sitemap div {
+  display: grid;
+  justify-items: start;
+  align-content: center;
+}
+
+.footer_logo img {
+  height: 5.5em;
+}
+
+.footer_center div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 1.5em;
+}
+
+.footer_center a {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 0;
+  display: block;
+}
+
+.footer_center h5 {
+  margin-bottom: 1em;
+}
+
+.ver_line {
+  width: 2px;
+  margin: 1em 0;
+  border-left: 1px solid gray;
+  opacity: .2;
+  height: 12em;
+}
+
+.footer_right {
+  padding-right: 1em;
+}
+
+.footer_right figure {
+  margin: 0;
+  width: 5em;
+  display: grid;
+  justify-content: center;
+}
+
+.footer_right aside {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  width: fit-content;
+  margin-bottom: 1em;
+}
+
+.footer_right h4,
+.footer_right p {
+  font-size: 1em;
+  margin: .1em;
+}
+
+.footer_right i {
+  font-size: 3em;
+}
+
+.footer_sitemap .social_icons {
+  font-size: 2em;
+  grid-gap: 0.5em;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer_sitemap .social_icons i {
+  opacity: .4;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2em;
+  background-image: linear-gradient(90deg,#fadb62 0%,#FFA862 100%);
+}
+
+.homepage article {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 2em;
+}
+
+.time_card {
+  min-width: 20em;
+}
+
+.home_cards {
+  display: grid;
+  justify-items: center;
+  padding: 1em;
+  border: 1px solid white;
+  box-shadow: 5px 6px 12px 5px #888888;
+  grid-row-gap: .2em;
+  border-radius: 8px;
+}
+
+.signin_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em;
+  grid-column-gap: 8em;
+}
+
+.form_box {
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 8px;
+  padding: 2em;
+  width: 95%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.pt-3-half {
+  padding-top: 1.4rem;
+  }
+
+.card {
+  border-radius: 8px;
+}
+
+.w15em {
+  width: 15em;
+}
+
+.w20em {
+  width: 20em;
+}
+
+.w10em {
+  width: max-content;
+}
+
+.table td, .table th {
+  padding: .75rem .25rem;
+  vertical-align: center;
+}
+
+.modal-title, 
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group .form-check-label {
+  font-weight: normal;
+}
+ /*-----------end of sitemap-------------*/
+
+ /*---------------Student Profile--------------*/
+
+nav > center > a {
+  margin-right: 1em;
+}
+
+.user_id img {
+  height: 3em;
+  border-radius: 50%;
+  border: #FFA862 2px solid;
+}
+
+.user_id {
+  display: flex;
+  align-items: center;
+}
+
+
+
+  @media only screen and (max-width: 992px) {
+
+    .homepage nav {
+      grid-template-columns: 1fr auto;
+      padding: 0 1em;  
+    }
+
+    nav > h2 {
+      display: none;
+    }
+  }
+
+
+
+  
